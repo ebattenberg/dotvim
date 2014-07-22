@@ -3,7 +3,7 @@ dotvim
 
 This is my personal .vim directory.  It uses pathogen to manage the vim path.
 
-# Setup
+#### Setup
 
 1. cd ~
 2. git clone https://github.com/ebattenberg/dotvim .vim
