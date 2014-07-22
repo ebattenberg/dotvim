@@ -1,7 +1,7 @@
 dotvim
 ======
 
-This is my personal .vim directory.  It uses pathogen to manage the vim path.
+This is my personal .vim directory.  It uses pathogen to manage the vim path.  The plugins are heavily biased toward Python development.
 
 #### Setup
 
