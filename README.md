@@ -8,6 +8,7 @@ This is my personal .vim directory.  It uses pathogen to manage the vim path.  T
 Checkout project to .vim
 ```
 cd ~
+rm -rf .vim
 git clone https://github.com/ebattenberg/dotvim .vim
 ```
 Link in vimrc/gvimrc
