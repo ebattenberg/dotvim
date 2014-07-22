@@ -1,0 +1,11 @@
+
+" gvim options
+colorscheme metacosm
+" other colorschemes: candy, ekvoli
+set guifont=Monospace\ 9
+set noantialias
+"set lines=35
+"set columns=120
+
+set guioptions-=T
+
