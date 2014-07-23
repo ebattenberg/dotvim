@@ -50,6 +50,9 @@ map <leader>g :GundoToggle<CR>
 " PEP8 checker
 "let g:pep8_map='<leader>8' 
 
+" Minibufexplorer
+map <leader>f :MBEFocus<CR>
+
 " Python-Mode Lint
 map <leader>s :PymodeLint<CR>
 map <leader>sn :lnext<CR>
@@ -61,7 +64,7 @@ let g:pymode_lint_on_write = 0
 let g:pymode_rope = 0
 
 " Toggle NERDTree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>t :NERDTreeToggle<CR>
 
 " Completion
 "au FileType python set omnifunc=pythoncomplete#Complete
