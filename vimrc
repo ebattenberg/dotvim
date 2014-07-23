@@ -50,11 +50,10 @@ map <leader>g :GundoToggle<CR>
 " PEP8 checker
 "let g:pep8_map='<leader>8' 
 
-" Syntastic checker
-"map <leader>s :SyntasticCheck<CR>
-"map <leader>sn :lnext<CR>
-"map <leader>sp :lprev<CR>
-"let g:syntastic_always_populate_loc_list = 1
+" Pymode Lint Checker
+map <leader>s :PymodeLint<CR>
+map <leader>sn :lnext<CR>
+map <leader>sp :lprev<CR>
 
 " Toggle NERDTree
 map <leader>n :NERDTreeToggle<CR>
