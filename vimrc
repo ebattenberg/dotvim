@@ -37,6 +37,9 @@ set lbr
 map <F4> :set hls!<bar>set hls?<CR>
 nnoremap <silent> <Tab> :nohlsearch<bar>pclose<CR>|
 
+" quick save
+noremap <leader>s :update<CR>
+
 " jump between tabs with mac command key (D)
 nnoremap <D-[> gT
 nnoremap <D-]> gt
@@ -53,23 +56,30 @@ map <leader>g :GundoToggle<CR>
 " Minibufexplorer
 map <leader>f :MBEFocus<CR>
 
+" Python-Mode
+let g:pymode = 1
+
 " Python-Mode Lint
-map <leader>s :PymodeLint<CR>
-map <leader>sn :lnext<CR>
-map <leader>sp :lprev<CR>
-let g:pymode_lint = 0
-let g:pymode_lint_on_write = 0
+map <leader>ll :PymodeLint<CR>
+map <leader>lt :PymodeLintToggle<CR>
+map <leader>lo :lopen<CR>
+map <leader>lc :lclose<CR>
+map <leader>ln :lnext<CR>
+map <leader>lp :lprev<CR>
+let g:pymode_lint = 1
+let g:pymode_lint_on_write = 1
+let g:pymode_lint_cwindow = 0
 
 " Python-Mode Rope
 let g:pymode_rope = 0
 
 " Toggle NERDTree
-map <leader>t :NERDTreeToggle<CR>
+map <leader>tt :NERDTreeToggle<CR>
 
 " Completion
-"au FileType python set omnifunc=pythoncomplete#Complete
-"let g:SuperTabDefaultCompletionType = "context"
-"set completeopt=menuone,longest,preview
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
 
 
 " cuda syntax highlighting
