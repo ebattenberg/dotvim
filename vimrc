@@ -83,8 +83,8 @@ set completeopt=menuone,longest,preview
 
 
 " cuda syntax highlighting
-au BufNewFile,BufRead *.cu set ft=c
-au BufNewFile,BufRead *.cuh set ft=c
+au BufNewFile,BufRead *.cu set ft=cpp
+au BufNewFile,BufRead *.cuh set ft=cpp
 "au BufNewFile,BufRead *.cu set ft=cu
 "
 
@@ -112,11 +112,11 @@ let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 "set updatetime=2000
 "let tlist_c_settings = 'c;c:class;d:macro;f:function;t:typedef;v:variable;m:members'
 "let tlist_cpp_settings = 'c++;c:class;d:macro;p:prototype;f:function;t:typedef;v:variable;m:members'
-"nnoremap <F5> :TlistToggle<CR>
-"nnoremap <F6> :TlistShowPrototype<CR>
-"let Tlist_WinWidth = 50
-"set tags=./tags;/ "check recursively upward until we find a 'tags' file
-"set cscopequickfix=s-,c-,d-,i-,t-,e-
+nnoremap <F5> :TlistToggle<CR>
+nnoremap <F6> :TlistShowPrototype<CR>
+let Tlist_WinWidth = 50
+set tags=./tags;/ "check recursively upward until we find a 'tags' file
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 
 " autocomplete from current file, loaded buffers, unloaded buffers

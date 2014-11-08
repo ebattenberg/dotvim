@@ -28,3 +28,12 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule "bundle/autoload_cscope"]
+	path = bundle/autoload_cscope
+	url = https://github.com/vim-scripts/autoload_cscope.vim.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/DirDiff"]
+	path = bundle/DirDiff
+	url = https://github.com/vim-scripts/DirDiff.vim.git
