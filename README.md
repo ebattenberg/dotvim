@@ -21,7 +21,6 @@ ln -s .vim/gvimrc.{your_os_here} .gvimrc
 Load submodules 
 ```
 cd ~/.vim
-git submodule init && git submodule update
-git submodule foreach git submodule init
-git submodule foreach git submodule update
+git submodule init .
+git submodule update .
 ```
