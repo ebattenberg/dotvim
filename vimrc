@@ -21,8 +21,8 @@ set number
 set incsearch
 set hlsearch
 set mouse=a
-set foldmethod=indent 
-"set foldmethod=syntax "macvim: syntax folding makes completion very slow
+"set foldmethod=indent 
+set foldmethod=syntax "macvim: syntax folding makes completion very slow
 "set complete=.,b
 filetype on
 filetype plugin indent on
@@ -114,7 +114,8 @@ let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 "let tlist_cpp_settings = 'c++;c:class;d:macro;p:prototype;f:function;t:typedef;v:variable;m:members'
 nnoremap <F5> :TlistToggle<CR>
 nnoremap <F6> :TlistShowPrototype<CR>
-let Tlist_WinWidth = 50
+let Tlist_WinWidth = 40
+let Tlist_Use_Right_Window = 1
 set tags=./tags;/ "check recursively upward until we find a 'tags' file
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
